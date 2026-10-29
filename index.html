@@ -636,7 +636,7 @@
         <div class="stage-h"><h2>Match</h2><span class="micro">evidence ranked</span></div>
         <p class="stage-sub">The vendor record, ranked against the role you selected. Change the role and the order, the bullets and the emphasis all change with it — same facts, argued for the job in front of them.</p>
         <div class="ev-bar">
-          <div class="micro" id="ev-meta">6 records · ranked for growth / GTM</div>
+          <div class="micro" id="ev-meta">8 records · ranked for growth / GTM</div>
           <div class="micro" id="ev-count"></div>
         </div>
         <p class="ev-skills" id="ev-skills"></p>
@@ -863,7 +863,7 @@
   TRACKS.forEach(function(t){ TRACK_NAME[t.k] = t.label; });
 
   var SKILLS = {
-    growth:   ["Google Ads","Meta Ads","CRM","Lead scoring","SEO","n8n","Automation workflows"],
+    growth:   ["Google Ads","Meta Ads","CRM","Lead scoring","SEO","n8n","Claude Code","Automation workflows"],
     perf:     ["Google Ads","Meta Ads","Meta Pixel","GA4","Cost per lead","Google Trends","Budget planning"],
     brand:    ["Market research","Copy in English / Hindi / Marathi","Content production","Midjourney","PowerPoint"],
     research: ["Market research","Google Trends","SQL (PostgreSQL)","Excel","Multi-language search","Competitor teardowns"],
@@ -1074,26 +1074,31 @@
       b:[
         {k:["research","growth","ecom","brand"], t:"Researched salmon demand across seven emerging markets in South Asia and the Gulf, searching in local languages as well as English."},
         {k:["research","data","perf"], t:"Pulled Google Trends data for India across search, YouTube and Shopping, stripped out unrelated results, and delivered a 57-page report plus clean CSVs built for dashboards."},
-        {k:["ecom","growth","brand","perf"], t:"Reviewed the company website and made the case for moving it to Shopify — two homepage prototypes and a plan covering SEO, product pages and Indian payment methods."},
+        {k:["ecom","growth","brand","perf"], t:"Reviewed the company website and made the case for moving it to Shopify; now leading the rebuild plan — SEO, product pages, Indian payment methods and a 39-item tracking plan."},
+        {k:["growth","brand","perf"], t:"Set the social strategy: one brand across Instagram, Facebook, LinkedIn, Google Business Profile, WhatsApp and IndiaMART."},
+        {k:["brand","ecom","growth"], t:"Made an 8-page B2B catalogue for distributors of an imported seaweed range, with 3-D product renders built in Blender."},
+        {k:["brand","growth"], t:"Produced a 10-second animated brand film and a walkable 3-D model of the processing plant for the directors."},
         {k:["ecom","growth","research"], t:"Compared Blinkit and Zepto on how they operate and what they charge, to judge whether listing there was worth it."},
         {k:["research","ecom","data"], t:"Researched suppliers for cold-chain operations — 5 cold stores, ~12 vehicles, −18°C — and specified food-grade protective gear for the processing unit."},
         {k:["brand","research"], t:"Wrote the factory's safety and FSSAI compliance signage in English, Hindi and Marathi."}
       ],
       c:[{k:["research","data"],t:"Google Trends"},{k:["research","growth","brand"],t:"Market research"},{k:["ecom","growth"],t:"Shopify"},
-         {k:["ecom","perf","growth"],t:"SEO"},{k:["ecom","research"],t:"Marketplace economics"},{k:["brand"],t:"Trilingual copy"},{k:["data"],t:"CSV pipelines"}]
+         {k:["ecom","perf","growth"],t:"SEO"},{k:["ecom","research"],t:"Marketplace economics"},{k:["brand"],t:"Trilingual copy"},{k:["data"],t:"CSV pipelines"},
+         {k:["growth","brand"],t:"Social strategy"},{k:["brand","ecom"],t:"B2B collateral"},{k:["brand"],t:"Blender"}]
     },
     {
       id:"uchitvu", t:"Co-Founder & Head of Marketing",
-      o:"UchitVu — bootstrapped marketing agency",
-      per:"2023 – 2026",
+      o:"UchitVu — bootstrapped agency, now search and AI visibility for clinics",
+      per:"2023 – present",
       m:{growth:96, perf:99, brand:84, research:68, ecom:72, data:64},
       b:[
         {k:ALL, t:"Built and ran a marketing agency from scratch, owning strategy and delivery for the agency and its clients."},
         {k:["perf","growth","data","ecom"], t:"Ran Google and Meta ad campaigns for EdTech clients and brought cost per lead down."},
-        {k:["growth","brand","perf","research"], t:"Handled planning, hiring, budgets, team management and client negotiations across two years of trading."},
+        {k:["growth","brand","research","ecom"], t:"Repositioned the offer around search and AI-assistant visibility for independent clinics, and built the pre-launch site and lead funnel."},
+        {k:["growth","brand","perf","research"], t:"Handled planning, hiring, budgets, team management and client negotiations."},
         {k:["brand","growth"], t:"Positioned and sold the agency itself — every client was won, not inherited."}
       ],
-      c:[{k:["perf","growth"],t:"Google Ads"},{k:["perf","growth"],t:"Meta Ads"},{k:["perf","data"],t:"Cost per lead"},
+      c:[{k:["perf","growth"],t:"Google Ads"},{k:["perf","growth"],t:"Meta Ads"},{k:["perf","data"],t:"Cost per lead"},{k:["growth","research"],t:"AI visibility"},
          {k:["growth","brand"],t:"Agency ops"},{k:["growth"],t:"Hiring"},{k:["brand"],t:"Positioning"},{k:["research","perf"],t:"Budget planning"}]
     },
     {
@@ -1136,6 +1141,29 @@
       ],
       c:[{k:["data"],t:"Firebase"},{k:["data"],t:"Realtime sync"},{k:["data"],t:"Security rules"},
          {k:["brand"],t:"121 questions written"},{k:["growth","ecom"],t:"Shipped solo"}]
+    },
+    {
+      id:"tank", t:"Tank Battle — two-phone 3-D web game",
+      o:"Project — Three.js, PeerJS, JavaScript", per:"gtm-cyadav.github.io/tank-battle",
+      link:"https://gtm-cyadav.github.io/tank-battle/",
+      m:{growth:62, perf:40, brand:70, research:44, ecom:48, data:80},
+      b:[
+        {k:["data"], t:"Two phones play one live 3-D match, connected peer-to-peer with no game server in between."},
+        {k:["data","brand"], t:"Built for phones in Three.js, with on-screen controls and a heads-up display sized for landscape screens."},
+        {k:ALL, t:"Shipped solo behind an automated test suite that checks rules, layout and controls before every release."}
+      ],
+      c:[{k:["data"],t:"Three.js"},{k:["data"],t:"Peer-to-peer"},{k:["data"],t:"Automated tests"},{k:["growth","ecom"],t:"Shipped solo"}]
+    },
+    {
+      id:"skills", t:"AI skill libraries",
+      o:"Project — Claude Code, Python, Blender", per:"Oct 2026 – present",
+      m:{growth:80, perf:58, brand:72, research:66, ecom:60, data:86},
+      b:[
+        {k:ALL, t:"Wrote reusable Claude Code skills that turn repeat work into checked, one-command routines."},
+        {k:["brand","ecom","data"], t:"A nine-part Blender set for product renders: modelling, curves, materials, lighting, still life, and a numeric look-check before anything is shown."},
+        {k:["growth","research","data"], t:"Workflow skills — brief, log, session start, checkpoint — that keep long, multi-session projects handover-ready."}
+      ],
+      c:[{k:["growth","data"],t:"Claude Code"},{k:["growth"],t:"AI agents"},{k:["brand"],t:"Blender"},{k:["data"],t:"Python"}]
     },
     {
       id:"tutor", t:"Private Tutor",
