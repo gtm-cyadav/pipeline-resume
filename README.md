@@ -73,7 +73,7 @@ To route to Slack instead, point `CAPTURE_ENDPOINT` at an n8n webhook rather tha
 
 ## Stack
 
-Vanilla HTML, CSS and JavaScript, with Spectral, Archivo and IBM Plex Mono self-hosted from `fonts/`. No framework, no build step.
+Vanilla HTML, CSS and JavaScript, with Newsreader, Public Sans and IBM Plex Mono self-hosted from `fonts/`. No framework, no build step.
 
 ### Accessibility
 

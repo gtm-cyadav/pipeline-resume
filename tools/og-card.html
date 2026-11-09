@@ -4,24 +4,24 @@
 <head>
 <meta charset="utf-8">
 <style>
-  @font-face{ font-family:Spectral; font-weight:500; src:url(../fonts/spectral-500.woff2) format("woff2"); }
-  @font-face{ font-family:Spectral; font-style:italic; font-weight:500; src:url(../fonts/spectral-italic-500.woff2) format("woff2"); }
-  @font-face{ font-family:Archivo; font-weight:400 700; src:url(../fonts/archivo-var.woff2) format("woff2"); }
+  @font-face{ font-family:Newsreader; font-weight:400 600; src:url(../fonts/newsreader-var.woff2) format("woff2"); }
+  @font-face{ font-family:Newsreader; font-style:italic; font-weight:500; src:url(../fonts/newsreader-italic-500.woff2) format("woff2"); }
+  @font-face{ font-family:"Public Sans"; font-weight:400 700; src:url(../fonts/public-sans-var.woff2) format("woff2"); }
   @font-face{ font-family:Plex; font-weight:500; src:url(../fonts/ibm-plex-mono-500.woff2) format("woff2"); }
   *{ box-sizing:border-box; margin:0; }
   html,body{ width:1200px; height:630px; }
-  body{ background:#0B0F0E; color:#ECEFEC; position:relative; overflow:hidden; font-family:Archivo,sans-serif; }
-  .frame{ position:absolute; inset:32px; border:1px solid rgba(236,239,236,.12); border-radius:22px; }
-  .micro{ position:absolute; left:84px; top:82px; font:500 17px Plex,monospace; letter-spacing:.14em; text-transform:uppercase; color:#86918A; }
-  h1{ position:absolute; left:80px; top:124px; font:500 128px/.95 Spectral,serif; letter-spacing:-.025em; }
-  .role{ position:absolute; left:86px; top:392px; width:620px; font-size:27px; line-height:1.35; color:#C9A96A; }
-  .line{ position:absolute; left:86px; bottom:80px; font:500 30px/1.25 Spectral,serif; color:#ECEFEC; }
-  .line em{ color:#C9A96A; }
+  body{ background:#121B21; color:#DCE4E8; position:relative; overflow:hidden; font-family:"Public Sans",sans-serif; }
+  .frame{ position:absolute; inset:32px; border:1px solid rgba(220,228,232,.12); border-radius:22px; }
+  .micro{ position:absolute; left:84px; top:82px; font:500 17px Plex,monospace; letter-spacing:.14em; text-transform:uppercase; color:#93A3AC; }
+  h1{ position:absolute; left:80px; top:124px; font:500 128px/.95 Newsreader,serif; letter-spacing:-.025em; }
+  .role{ position:absolute; left:86px; top:392px; width:620px; font-size:27px; line-height:1.35; color:#86BDB4; }
+  .line{ position:absolute; left:86px; bottom:80px; font:500 30px/1.25 Newsreader,serif; color:#DCE4E8; }
+  .line em{ color:#86BDB4; }
   .dial{ position:absolute; right:92px; top:110px; width:270px; text-align:center; }
   .dial svg{ width:270px; height:270px; transform:rotate(-90deg); display:block; }
-  .dial b{ position:absolute; left:0; right:0; top:84px; font:500 96px/1 Spectral,serif; }
-  .dial small{ position:absolute; left:0; right:0; top:192px; font:500 15px Plex,monospace; letter-spacing:.14em; color:#86918A; }
-  .pill{ display:inline-block; margin-top:26px; padding:9px 18px; border:1.5px solid #DD6E4A; border-radius:999px; color:#DD6E4A; font:500 16px Plex,monospace; letter-spacing:.12em; }
+  .dial b{ position:absolute; left:0; right:0; top:84px; font:500 96px/1 Newsreader,serif; }
+  .dial small{ position:absolute; left:0; right:0; top:192px; font:500 15px Plex,monospace; letter-spacing:.14em; color:#93A3AC; }
+  .pill{ display:inline-block; margin-top:26px; padding:9px 18px; border:1.5px solid #E0876A; border-radius:999px; color:#E0876A; font:500 16px Plex,monospace; letter-spacing:.12em; }
 </style>
 </head>
 <body>
@@ -32,9 +32,9 @@
 
 <div class="dial">
   <svg viewBox="0 0 80 80" aria-hidden="true">
-    <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(236,239,236,.10)" stroke-width="5"/>
+    <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(220,228,232,.10)" stroke-width="5"/>
     <!-- 77 / 100 of the ring -->
-    <circle cx="40" cy="40" r="34" fill="none" stroke="#DD6E4A" stroke-width="5" stroke-linecap="round" stroke-dasharray="164.5 214"/>
+    <circle cx="40" cy="40" r="34" fill="none" stroke="#E0876A" stroke-width="5" stroke-linecap="round" stroke-dasharray="164.5 214"/>
   </svg>
   <b>77</b><small>YOUR SCORE</small>
   <div class="pill">ALERT FIRED</div>
