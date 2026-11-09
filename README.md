@@ -58,7 +58,7 @@ node tools/build-cv.mjs           # rewrite the block after editing the page dat
 node tools/build-cv.mjs --check   # exit 1 if it is out of date
 ```
 
-`og.png` is the link-preview image (rendered from `tools/og-card.html` with `node tools/render-og.mjs`, which needs Playwright). The `og:` and `canonical` URLs in `<head>` assume the site is served at `https://gtm-cyadav.github.io/pipeline-to-hire-me/`; change them if it lives elsewhere.
+`og.png` is the link-preview image (rendered from `tools/og-card.html` with `node tools/render-og.mjs`, which needs Playwright). The `og:` and `canonical` URLs in `<head>` assume the site is served at `https://gtm-cyadav.github.io/pipeline-resume/`; change them if it lives elsewhere.
 
 ## Lead capture
 
